@@ -27,8 +27,8 @@ A cotação da moeda é gerada de forma randômica para simulação.
 
 - Em um terminal, iniciar o servidor:
   
-`python udp/servidor_tcp.py`
+`python tcp/servidor_tcp.py`
 
 - Em outro terminal, executar o cliente:
 
-`python udp/cliente_tcp.py`
+`python tcp/cliente_tcp.py`
