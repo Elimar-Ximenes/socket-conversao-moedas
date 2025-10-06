@@ -1,34 +1,40 @@
-# Socket Conversor de Moedas (UDP e TCP)
+# 💱 Socket Conversor de Moedas (UDP e TCP)
 
-Este projeto implementa clientes e servidores em **UDP** e **TCP** usando Python.  
-O cliente envia um valor em reais (R$) e a moeda desejada (ex: dólar), e o servidor retorna o valor convertido.  
-A cotação da moeda é gerada de forma randômica para simulação.
+Este projeto implementa **clientes e servidores em UDP e TCP usando Python**, simulando um **conversor de moedas**.  
+O cliente envia um valor em reais (R$) e a moeda desejada (ex: USD, EUR), e o servidor retorna o valor convertido com base em uma **cotação randômica** gerada para fins de simulação.
 
----
+## ⚙️ Funcionalidades
+- Comunicação via **UDP** e **TCP**.
+- **Três requisições** no cliente para demonstração.
+- Retorno formatado com cotação e valor convertido.
+- Estrutura modular com pastas separadas (`udp/` e `tcp/`).
 
-## 🚀 Como executar
+## 🚀 Como Executar
 
-### 1. Clonar o repositório
-`git clone https://github.com/seu-usuario/socket-conversao-moedas.git`
+### 1️⃣ Clonar o repositório
+git clone https://github.com/Elimar-Ximenes/socket-conversao-moedas.git  
+cd socket-conversao-moedas  
 
-`cd socket-conversao-moedas`
+### 2️⃣ Executar a versão UDP
+Em um terminal, iniciar o servidor:  
+python udp/servidor_udp.py  
 
-### 2. Executar a versão UDP
+Em outro terminal, executar o cliente:  
+python udp/cliente_udp.py  
 
-- Em um terminal, iniciar o servidor:
-  
-`python udp/servidor_udp.py`
+💡 O cliente UDP realizará **três requisições consecutivas**, enviando valores e moedas informados pelo usuário e exibindo as respostas de conversão do servidor.
 
-- Em outro terminal, executar o cliente:
+### 3️⃣ Executar a versão TCP
+Em um terminal, iniciar o servidor:  
+python tcp/servidor_tcp.py  
 
-`python udp/cliente_udp.py`
+Em outro terminal, executar o cliente:  
+python tcp/cliente_tcp.py  
 
-### 3. Executar a versão TCP
+💡 O cliente TCP também realizará **três requisições**, demonstrando o comportamento de conexão, envio, resposta e encerramento da sessão.
 
-- Em um terminal, iniciar o servidor:
-  
-`python tcp/servidor_tcp.py`
+## 👤 Autor
+**Joel Sousa Silva**  
+Branch de desenvolvimento: `joel-teste`  
+Adaptação e testes baseados no repositório original de **Elimar Ximenes**.
 
-- Em outro terminal, executar o cliente:
-
-`python tcp/cliente_tcp.py`
