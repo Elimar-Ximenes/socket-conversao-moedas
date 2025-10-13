@@ -4,6 +4,7 @@ Este projeto implementa clientes e servidores em **UDP** e **TCP** usando Python
 O cliente envia um valor em reais (R$) e a moeda desejada (ex: dólar), e o servidor retorna o valor convertido.  
 A cotação da moeda é gerada de forma randômica para simulação.
 
+> Esta branch foi desenvolvida com foco na questão 8. O código referente à questão 9 pode ser encontrado na branch *joel-teste*. De forma geral, ambos os códigos são praticamente iguais, diferindo apenas em alguns ajustes nos *prints* e na adaptação que permite ao usuário realizar as três requisições de conversão em sequência, conforme solicitado na questão.
 ---
 
 ## 🚀 Como executar
